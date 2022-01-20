@@ -31,7 +31,7 @@ with open(file_to_load) as election_data:
             candidate_options.append(candidate_name)
             #and begin tracking that candidate's vote counter
             candidate_votes[candidate_name] = 0
-        #add a vote to that candidate's count]
+        #add a vote to that candidate's count
         candidate_votes[candidate_name] += 1
 
 # Save the results to our text file.
@@ -46,7 +46,7 @@ with open(file_to_save, "w") as txt_file:
     # Save the final vote count to the text file.
     txt_file.write(election_results)
 
-        # Determine the percentage of votes for each candidate by looping through the counts.
+    # Determine the percentage of votes for each candidate by looping through the counts.
     # Iterate through the candidate list.
     for candidate_name in candidate_votes:
         #Retrieve vote count of a candidate.
